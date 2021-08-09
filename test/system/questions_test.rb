@@ -12,11 +12,11 @@ class QuestionsTest < ApplicationSystemTestCase
   end
 
   test "asking a question yields a sharp response from the coach" do
-    take_screenshot
+
     visit ask_url
     fill_in "question", with: "How are you?"
     click_on "Ask"
-
+    take_screenshot
     assert_text "Silly question, get dressed and go to work!"
   end
 

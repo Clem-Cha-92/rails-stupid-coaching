@@ -1,0 +1,18 @@
+<h1>Stupid Coaching</h1><br>
+
+<div class="alert alert-light">
+  <%= params[:question] %>
+  <br><br>
+  <p><em>- You</em></p>
+</div>
+<br>
+<div class="alert alert-warning">
+  <strong><%= @answer %></strong>
+  <br><br>
+  <p><em>- Your coach</em></p>
+</div>
+
+<br>
+<div class="btn btn-primary">
+  <%= link_to "Tell something else", ask_path %>
+</div>
